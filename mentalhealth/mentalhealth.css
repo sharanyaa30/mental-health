@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7fbff;
+  color: #2f3e46;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 80px;
+  background: #ffffff;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 28px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #2f3e46;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #6b9ac4;
+  transform: translateY(-2px);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 120px 100px;
+  background: linear-gradient(135deg, #dff3ff, #e9e4ff);
+}
+
+.hero h1 {
+  font-size: 90px;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.hero img {
+  width: 450px;
+  margin-left: 40px;
+}
+
+/* MOOD */
+.mood {
+  padding: 100px;
+  text-align: center;
+}
+
+.mood h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.mood-buttons button {
+  margin: 10px;
+  padding: 14px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  background: #e6f4ea;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mood-buttons button:hover {
+  transform: scale(1.1);
+  background: #cdeee0;
+}
+
+/* BREATHING */
+.breathing {
+  padding: 120px;
+  text-align: center;
+  background: #f0f7f5;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  background: #cbe4f9;
+  border-radius: 50%;
+  margin: 40px auto;
+  animation: breathe 6s infinite ease-in-out;
+}
+
+@keyframes breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+/* THERAPISTS */
+.therapists {
+  padding: 120px;
+}
+
+.therapist-grid {
+  display: flex;
+  gap: 40px;
+}
+
+.therapist-card {
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.therapist-card:hover {
+  transform: translateY(-10px);
+}
+
+.therapist-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* BLOG */
+.blog {
+  padding: 120px;
+  background: #ffffff;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.blog-card img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.blog-card:hover img {
+  transform: scale(1.05);
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 100px;
+  text-align: center;
+  background: #e9e4ff;
+}
+
+/* FOOTER */
+footer {
+  padding: 50px;
+  text-align: center;
+  background: #2f3e46;
+  color: #fff;
+}
